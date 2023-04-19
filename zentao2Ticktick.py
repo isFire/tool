@@ -48,7 +48,7 @@ if len(new_bugs) > 0:
         for bug in new_bugs:
             # 生成邮件正文
             msg = MIMEText(str(bug), 'html')
-            title = '[' + bug['title'] + ' #tag ~list ](' + ZENTAO_URL + '/zentao/bug-view-' + bug[
+            title = '[' + bug['title'] + ' #tag ~list ](' + ZENTAO_URL + '/bug-view-' + bug[
                 'id'] + '.html'')'
             print(title)
             msg['Subject'] = title
